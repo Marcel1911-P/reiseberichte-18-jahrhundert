@@ -84,6 +84,7 @@ h1 em { color: var(--green); }
 .button:hover { background: var(--green-dark); }
 .button:focus-visible, a:focus-visible { outline: 3px solid #b4c9b3; outline-offset: 3px; }
 .hero-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; }
+.source-link { display: inline-block; margin: 13px 0 0 14px; color: var(--green-dark); font-size: 12px; font-weight: 600; }
 .section { margin-bottom: 28px; padding: clamp(23px, 5vw, 48px); border: 1px solid var(--line); border-radius: 8px; background: var(--white); }
 .section-heading { max-width: 720px; margin-bottom: 27px; }
 .section-heading .eyebrow { margin-bottom: 8px; }
@@ -112,6 +113,7 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 23px
 @media (max-width: 520px) {
   .site-header { padding-inline: 16px; }
   .header-link { font-size: 11px; }
+  .source-link { margin-left: 0; }
   main { padding-inline: 14px; }
   .hero { padding-block: 58px 55px; }
   footer { flex-direction: column; padding-inline: 18px; }
