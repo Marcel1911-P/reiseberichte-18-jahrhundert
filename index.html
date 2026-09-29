@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VoyageStylo: lokale, explorative Analyse deutschsprachiger Reiseberichte des 18. Jahrhunderts.">
+  <meta name="theme-color" content="#f8f7f2">
+  <title>Reiseberichte im 18. Jahrhundert · VoyageStylo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="VoyageStylo, zum Anfang">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span>VoyageStylo<small>Reiseberichte im 18. Jahrhundert</small></span>
+    </a>
+    <a class="header-link" href="#methode">Zur Methode <span aria-hidden="true">↓</span></a>
+  </header>
+
+  <main id="start">
+    <section class="hero">
+      <p class="eyebrow">Ein lokales Forschungsprojekt</p>
+      <h1>Sprachliche Spuren<br><em>auf Reisen.</em></h1>
+      <p class="hero-copy">
+        VoyageStylo macht sprachliche Merkmale historischer deutschsprachiger
+        Reiseberichte erkundbar – transparent, reproduzierbar und ohne
+        Autorschaftsbehauptungen.
+      </p>
+      <a class="button" href="#lokal">VoyageStylo lokal ausprobieren <span aria-hidden="true">→</span></a>
+      <p class="hero-note">Diese Projektseite enthält keine Korpustexte oder Analyseergebnisse.</p>
+    </section>
+
+    <section class="section" aria-labelledby="explore-title">
+      <div class="section-heading">
+        <p class="eyebrow">Was die Anwendung bietet</p>
+        <h2 id="explore-title">Texte vergleichen, nicht vorschnell erklären.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>Linguistische Profile</h3>
+          <p>Wort- und Satzzahlen, Wort- und Satzlängen, Type-Token-Ratio, Hapax-Anteile und Worthäufigkeiten.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>Stilometrischer Vergleich</h3>
+          <p>Getrennte Vergleiche mit TF-IDF und einer versionierten Liste historischer deutscher Funktionswörter.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>Explorative PCA</h3>
+          <p>Eine Projektion der ausgewählten Merkmale auf Hauptkomponenten samt erklärtem Varianzanteil.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="methode" class="section method-section" aria-labelledby="method-title">
+      <div class="section-heading">
+        <p class="eyebrow">Transparenz</p>
+        <h2 id="method-title">Was die Ergebnisse bedeuten – und was nicht.</h2>
+      </div>
+      <div class="method-copy">
+        <p>
+          Ähnlichkeitswerte und PCA-Positionen beschreiben ausschliesslich
+          die gewählten sprachlichen Merkmale. Sie können unter anderem von
+          Textlänge, Thema, Textsorte, Edition und OCR-Qualität beeinflusst sein.
+        </p>
+        <p>
+          Das kleine historische Korpus und seine automatische Texterkennung
+          begrenzen die Aussagekraft. Die Visualisierungen sind Werkzeuge zur
+          Erkundung, keine Beweise für Autorschaft oder historische,
+          literarische beziehungsweise soziale Zusammenhänge.
+        </p>
+      </div>
+      <p class="notice"><strong>Keine Korpusdaten auf dieser Website.</strong> Die interaktive Analyse verarbeitet die vorhandenen Texte nur in der lokalen Anwendung.</p>
+    </section>
+
+    <section id="lokal" class="section local-section" aria-labelledby="local-title">
+      <div>
+        <p class="eyebrow">Lokal starten</p>
+        <h2 id="local-title">Die Analyse bleibt auf deinem Gerät.</h2>
+        <p>Die vollständige Webanwendung benötigt Python und das VoyageStylo-Projekt mit seinen lokalen Korpusdateien. GitHub Pages hostet nur diese statische Informationsseite; es führt keinen Python-Server aus.</p>
+      </div>
+      <div class="command-card">
+        <span>Im Projektordner ausführen</span>
+        <code>python src/web_app.py</code>
+        <span>Dann im Browser öffnen</span>
+        <code>http://127.0.0.1:8000</code>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>VoyageStylo · Reiseberichte im 18. Jahrhundert</span>
+    <span>Lokale Analyse · historische Schreibweisen bleiben erhalten</span>
+  </footer>
+</body>
+</html>
